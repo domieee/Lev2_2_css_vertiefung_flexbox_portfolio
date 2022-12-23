@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @FONT-FACES */
+
+/* ARCHIVO REGULAR */
+
+@font-face {
+    font-family: ArchivoRegular;
+    src: url(../fonts/Archivo-Regular.ttf);
+}
+
+/* ARCHIVO REGULAR */
+
+@font-face {
+    font-family: ArchivoBold;
+    src: url(../fonts/Archivo-Bold.ttf);
+}
+
+/* NAVIGATIONSLEISTE */
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.header h1 {
+    margin: 1em auto 0 4em;
+    font-family: ArchivoRegular;
+    font-size: 1.5em;
+}
+
+#nameTitle {
+    text-decoration: none;
+    color: black;
+}
+
+.header nav a {
+    font-family: ArchivoRegular;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.header nav a:hover {
+    color: lightslategray;
+}
+
+.header nav a:nth-child(2),
+.header nav a:nth-child(3),
+.header nav a:nth-child(4) {
+    padding-left: 4em;
+}
+
+.header nav a:nth-child(5) {
+    margin-left: 4em;
+    margin-right: 4em;
+    padding: 8px 13px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+.header nav a:nth-child(5):hover {
+    color: white;
+}
+
+/* MAIN SECTION */
+
+.sectionLanding {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.sectionLanding article a {
+    margin: 0 auto;
+}
+
+article {
+    width: 25%;
+}
+
+main .sectionLanding article h1 {
+    font-family: ArchivoRegular;
+    font-size: 2em;
+    line-height: 30px;
+}
+
+main .sectionLanding article h1:nth-child(2) {
+
+    padding-bottom: 10px;
+}
+
+main .sectionLanding article p {
+    font-family: ArchivoRegular;
+    font-size: 1.2em;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+main .sectionLanding article a {
+    font-family: ArchivoRegular;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 8px 13px;
+    background-color: rgb(128, 128, 128);
+    color: white;
+    border-radius: 10px;
+    transition: padding 0.1s ease;
+}
+
+main .sectionLanding article a:hover {
+    padding: 10px 15px;
+}
+
+main .sectionLanding article #landingFoto {
+    height: auto;
+    border-radius: 10px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+main .sectionLanding article #landingFoto:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    top: 30%;
+    left: 50%;
+}
+
+main .sectionLanding article #landingFotoBackground:hover {
+    top: 30%;
+    left: 50%;
+}
+
+#landingFoto {
+
+    position: absolute;
+    width: 20em;
+    height: auto;
+    top: 29%;
+    left: 49.5%;
+    transition: top, left 0.5s;
+}
+
+#landingFotoBackground {
+    border-radius: 10px;
+    width: 20em;
+    height: auto;
+    position: absolute;
+    top: 31%;
+    left: 50.5%;
+    transition: top, left 0.5s;
+}
+
+
+.sectionAboutMe {
+    font-size: 1.1em;
+    font-family: ArchivoRegular;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionAboutMe h1 {
+    font-size: 2em;
+}
+
+#secondHeaderElement {
+    padding-left: 35px;
+}
+
+.wrapperIconsSocialMedia {
+    display: flex;
+    padding-top: 10px;
+}
+
+.wrapperIconsSocialMedia a #gitIcon {
+    padding: 10px 0 0 0 ;
+    height: 50px
+}
+
+.wrapperIconsSocialMedia a #linkedinIcon {
+    height: 50px;
+    padding: 10px 0 0 20px;
+}
